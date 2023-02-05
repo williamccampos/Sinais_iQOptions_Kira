@@ -1,4 +1,4 @@
-# Catalogador de Sinais - iQ Options By K1r4
+# Catalogador de Sinais - iQ Options By William Campos
 Código para catalogador de sinais da iQ Options
 Feito para testes em moeda Digital em índice binário com expiração de M1, M5 e M15
 
