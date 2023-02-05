@@ -8,10 +8,10 @@ setup(
     packages=find_packages(),
     install_requires=["pylint","requests","websocket-client==0.56"],
     include_package_data = True,
-    description="Best IQ Option API for python",
-    long_description="Best IQ Option API for python",
-    url="https://github.com/Lu-Yi-Hsun/iqoptionapi",
-    author="Lu-Yi-Hsun",
-    author_email="yihsun1992@gmail.com",
+    description="Versão mais atualizada da API IQ Options",
+    long_description="Versão mais atualizada da API IQ Options",
+    url="https://github.com/williamccampos/iqoptionapi",
+    author="William Campos",
+    author_email="william.campos29@gmail.com",
     zip_safe=False
 )

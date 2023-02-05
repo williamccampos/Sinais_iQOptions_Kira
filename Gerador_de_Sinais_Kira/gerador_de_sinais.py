@@ -2,14 +2,19 @@ from iqoptionapi.stable_api import IQ_Option
 from datetime import datetime, timedelta
 from colorama import init, Fore, Back
 from time import time
+import websocket
 import sys
 
 init(autoreset=True)
 
 API = IQ_Option('email', 'password')
-API.connect()
+header={"User-Agent":r"Mozilla/5.0 (X11; Linux x86_64; rv:70.0) Gecko/20100101 Firefox/70.0"}
+cookie={"API":"Funciona"}
+
+API.set_session(header,cookie)
 
 if API.check_connect():
+	API.connect()
 	print(' Conectado com sucesso!')
 else:
 	print(' Erro ao conectar')
