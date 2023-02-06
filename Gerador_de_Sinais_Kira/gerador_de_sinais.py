@@ -21,7 +21,6 @@ else:
 	input('\n\n Aperte enter para sair')
 	sys.exit()
 
-
 def cataloga(par, dias, prct_call, prct_put, timeframe):
 	data = []
 	datas_testadas = []
@@ -76,12 +75,12 @@ porcentagem = int(input())
 print('\nQuantos martingales?: ', end='')
 martingale = input()
 
-prct_call = abs(porcentagem)
+prct_call = abs(100 - porcentagem)
 prct_put = abs(100 - porcentagem)
 
 P = API.get_all_open_time()
 
-print('\n\n')
+print('\n')
 
 catalogacao = {}
 for par in P['digital']:
@@ -122,6 +121,7 @@ for par in P['digital']:
 print('\n\n')
 
 for par in catalogacao:
+	f=open('LISTA_CANDLE_' + str(timeframe) + 'M.txt', 'a')
 	for horario in sorted(catalogacao[par]):
 		ok = False		
 		
@@ -145,4 +145,5 @@ for par in catalogacao:
 						msg += ' | MG ' + str(i+1) + ' - N/A - N/A' 
 						
 			print(msg)	
-			open('CANDLE_' + str(timeframe) + 'M.txt', 'a').write('M' + str(timeframe) + ';' + par + ';' + horario  + ';' + catalogacao[par][horario]['dir'].strip() + '\n')
+			f.write('M' + str(timeframe) + '-' + par + '-' + horario  + '-' + catalogacao[par][horario]['dir'].strip() + '\n')
+	f.close()
