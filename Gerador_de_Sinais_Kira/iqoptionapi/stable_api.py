@@ -26,9 +26,9 @@ class IQ_Option:
     def __init__(self, email, password):
         self.size = [1, 5, 10, 15, 30, 60, 120, 300, 600, 900, 1800,
                      3600, 7200, 14400, 28800, 43200, 86400, 604800, 2592000]
-        print('\nDigite suas credenciais da IQ Options!', end='')
-        self.email = email = input('\nEmail: ')
-        self.password = password = input('Senha: ')
+        #print('\nDigite suas credenciais da IQ Options!', end='')
+        self.email = email
+        self.password = password
         self.suspend = 0.5
         self.thread = None
         self.subscribe_candle = []
@@ -341,7 +341,7 @@ class IQ_Option:
             pass
         return self.api.profile.msg
 
-    """def get_profile(self):
+    def get_profile(self):
         while True:
             try:
 
@@ -352,7 +352,7 @@ class IQ_Option:
                     return respon
             except:
                 logging.error('**error** get_profile try reconnect')
-                self.connect()"""
+                self.connect()
 
     def get_currency(self):
         balances_raw = self.get_balances()
@@ -363,7 +363,7 @@ class IQ_Option:
     def get_balance_id(self):
         return global_value.balance_id
 
-    """ def get_balance(self):
+    def get_balance(self):
         self.api.profile.balance = None
         while True:
             try:
@@ -374,7 +374,7 @@ class IQ_Option:
                 logging.error('**error** get_balance()')
 
             time.sleep(self.suspend)
-        return self.api.profile.balance"""
+        return self.api.profile.balance
 
     def get_balance(self):
 

@@ -8,7 +8,7 @@ import sys
 init(autoreset=True)
 
 API = IQ_Option('email', 'password')
-header={"User-Agent":r"Mozilla/5.0 (X11; Linux x86_64; rv:70.0) Gecko/20100101 Firefox/70.0"}
+header={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64; rv:70.0) Gecko/20100101 Firefox/70.0"}
 cookie={"API":"Funciona"}
 
 API.set_session(header,cookie)
@@ -20,6 +20,8 @@ else:
 	print(' Erro ao conectar')
 	input('\n\n Aperte enter para sair')
 	sys.exit()
+
+	print(API.get_balance());
 
 def cataloga(par, dias, prct_call, prct_put, timeframe):
 	data = []

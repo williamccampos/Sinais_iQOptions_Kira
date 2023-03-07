@@ -1,22 +1,13 @@
 site_name: iqoptionapi document
-#repo_name: 'THU-DBLAB/IRBRL'
-#repo_url: 'https://github.com/THU-DBLAB/IRBRL'
-#site_url: 'https://thu-dblab.github.io/IRBRL/'
 edit_uri: "" # this code say do not view edit on page
 extra:
- # disqus: 'lu-yi-hsun'
+ # disqus: 'william-campos'
   search:
     language: 'jp'
     #-tokenizer: '[\a\-\.]+'
   social:
     - type: 'github'
-      link: 'https://github.com/Lu-Yi-Hsun/'
-    - type: 'facebook'
-      link: 'https://www.facebook.com/profile.php?id=100001559307331'
-    #- type: 'twitter'
-      #link: 'https://twitter.com/squidfunk'
-   # - type: 'linkedin'
-     # link: 'https://linkedin.com/in/squidfunk'
+      link: 'https://github.com/williamccampos/'
     
 
 theme:
