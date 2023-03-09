@@ -1,11 +1,11 @@
 from iqoptionapi.stable_api import IQ_Option
 from datetime import datetime, timedelta
-from colorama import init, Fore, Back
+#from colorama import init, Fore, Back
 from time import time
 import websocket
 import sys
 
-init(autoreset=True)
+#init(autoreset=True)
 
 API = IQ_Option('email', 'password')
 header={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64; rv:70.0) Gecko/20100101 Firefox/70.0"}
