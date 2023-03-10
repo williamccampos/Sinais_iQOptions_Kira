@@ -1,19 +1,8 @@
-# Iqoption API
+# Catalogador de Sinais - iQ Options By K1r4
+Código para catalogador de sinais da iQ Options
+Feito para testes em moeda Digital em índice binário com expiração de M1, M5 e M15
 
-great robot
-https://npt-life.com/iq-option-robot
+# Dúvidas de como usar:
+Entre em contato pelo Git ou pelo Telegram @wilccampos
 
-Iqoption API private version https://npt-life.com/iq-option-api
-
-olymptrade API https://npt-life.com/olymptrade-api
-
-## Document
-
-### New document
-
-https://lu-yi-hsun.github.io/iqoptionapi/
- 
-### Old document
-
-old document not support anymore:
-https://github.com/Lu-Yi-Hsun/iqoptionapi_private/blob/master/old_document.md
+# Dê os devidos créditos se for usar o código, dá trabalho para desenvolver e ter comunicação com a API

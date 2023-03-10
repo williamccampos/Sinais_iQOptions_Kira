@@ -26,8 +26,9 @@ class IQ_Option:
     def __init__(self, email, password):
         self.size = [1, 5, 10, 15, 30, 60, 120, 300, 600, 900, 1800,
                      3600, 7200, 14400, 28800, 43200, 86400, 604800, 2592000]
-        self.email = 'seuemail@iqoption'
-        self.password = 'sua senha da iq'
+        print('\nDigite suas credenciais da IQ Options!', end='')
+        self.email = email = input('\nEmail: ')
+        self.password = password = input('Senha: ')
         self.suspend = 0.5
         self.thread = None
         self.subscribe_candle = []
